@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifrs18-restatement-engine"
+version = "0.1.0"
+description = "Rule-based IFRS 18 restatement of income statements with live-formula Excel output and MPM reconciliations"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "openpyxl>=3.1",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "hypothesis>=6", "matplotlib>=3.7"]
+
+[project.scripts]
+ifrs18 = "ifrs18.cli:main"
+
+[tool.setuptools]
+packages = ["ifrs18"]
+
+[tool.setuptools.package-data]
+ifrs18 = ["rules.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
