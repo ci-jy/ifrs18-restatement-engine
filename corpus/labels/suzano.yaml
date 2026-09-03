@@ -8,7 +8,7 @@ lines:
   L007: {category: operating, rationale: "Other operating income."}
   L009: {category: financing, rationale: "Interest on loans, bonds and leases (para 59)."}
   L010: {category: investing, rationale: "Interest on cash and marketable securities (para 53(b),(c))."}
-  L011: {category: financing, ambiguous: true, rationale: "Derivatives mostly swap USD debt and hedge debt-related cash flows; follow the hedged liability (B? derivatives); some hedge export revenue."}
+  L011: {category: financing, ambiguous: true, rationale: "Derivatives mostly swap USD debt and hedge debt-related cash flows; follow the hedged liability (IFRS 18 derivatives guidance); some hedge export revenue."}
   L012: {category: financing, ambiguous: true, rationale: "Monetary and exchange variations arise mostly on USD-denominated debt (B65: same category as the debt)."}
   L014: {category: income_taxes, rationale: "Current income tax and social contribution (para 67)."}
   L015: {category: income_taxes, rationale: "Deferred tax (para 67)."}

@@ -9,7 +9,7 @@ lines:
   L009: {category: operating, rationale: "Insurance service expense: main business."}
   L010: {category: operating, rationale: "Reinsurance held result: main business."}
   L012: {category: operating, rationale: "Other operating income of the group."}
-  L015: {category: operating, rationale: "Insurance finance expense of an insurer is in operating (B? insurance contracts issued as main business)."}
+  L015: {category: operating, rationale: "Insurance finance expense of an insurer is in operating (insurance contracts issued are the main business)."}
   L016: {category: operating, ambiguous: true, rationale: "Movement in third-party units of consolidated funds; arises from the investment business, operating for this entity, but could be argued financing."}
   L017: {category: operating, rationale: "Change in investment contract liabilities linked to policyholder assets: main business."}
   L020: {category: operating, rationale: "Operating expenses."}
