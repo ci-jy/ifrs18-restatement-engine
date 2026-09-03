@@ -1,0 +1,14 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Revenue."}
+  L002: {category: operating, rationale: "Cost of sales."}
+  L004: {category: operating, rationale: "Selling and distribution."}
+  L005: {category: operating, rationale: "Administrative expenses."}
+  L006: {category: operating, rationale: "Credit losses on customer receivables."}
+  L007: {category: investing, rationale: "Share of results of equity accounted associates and JVs (para 53(a), 55)."}
+  L008: {category: operating, rationale: "Goodwill impairment of consolidated operations."}
+  L009: {category: operating, rationale: "Other income incl. gains on disposal of subsidiaries (consolidated, so operating)."}
+  L011: {category: investing, rationale: "Interest on cash, deposits and investments (para 53(b),(c))."}
+  L012: {category: financing, ambiguous: true, rationale: "Interest on bonds and leases (para 59); also includes FX and derivative fair-value movements."}
+  L014: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}
+  L016: {category: discontinued, rationale: "Discontinued operations (para 68)."}

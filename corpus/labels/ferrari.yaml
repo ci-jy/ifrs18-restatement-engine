@@ -1,0 +1,11 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Revenue from cars, sponsorship and brand: main business activity, residual operating category."}
+  L002: {category: operating, rationale: "Cost of sales of the main business."}
+  L003: {category: operating, rationale: "SG&A of the main business."}
+  L004: {category: operating, rationale: "R&D expense of the main business."}
+  L005: {category: operating, rationale: "Other operating expenses, net; no indication of investing or financing items."}
+  L006: {category: investing, rationale: "Share of results of equity-accounted investees is always investing (para 53(a), 55)."}
+  L008: {category: investing, ambiguous: true, rationale: "Mostly interest on cash and investments (investing, para 53(b)); notes show some FX and derivative gains that would follow the hedged item."}
+  L009: {category: financing, ambiguous: true, rationale: "Mostly interest on bonds and borrowings (financing, para 59(a)); includes FX and derivative losses and lease interest."}
+  L012: {category: income_taxes, rationale: "IAS 12 income tax expense (para 67)."}

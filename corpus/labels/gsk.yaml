@@ -1,0 +1,16 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Turnover from medicines and vaccines."}
+  L002: {category: operating, rationale: "Cost of sales."}
+  L004: {category: operating, rationale: "SG&A."}
+  L005: {category: operating, rationale: "R&D."}
+  L006: {category: operating, rationale: "Royalty income from licensed intellectual property: arises from the main business, not an investment that generates a return largely independently."}
+  L007: {category: operating, ambiguous: true, rationale: "Mostly contingent consideration remeasurement on acquired businesses (operating); also includes fair value movements on equity investments that would be investing."}
+  L009: {category: investing, rationale: "Interest on cash and liquid investments (para 53(b))."}
+  L010: {category: financing, rationale: "Interest on bonds and borrowings, leases and unwinding of discounts (para 59)."}
+  L011: {category: investing, rationale: "Share of after-tax result of associates and JVs (para 53(a), 55)."}
+  L012: {category: investing, rationale: "Gain on disposal of interests in associates/JVs: income from those investments incl. disposal (para 53(a), 54)."}
+  L014: {category: income_taxes, rationale: "IAS 12 tax (para 67)."}
+  L016: {category: discontinued, rationale: "Discontinued operations (Consumer Healthcare demerger) (para 68)."}
+  L017: {category: discontinued, rationale: "Remeasurement of discontinued operation distributed on demerger (para 68)."}
+  L018: {category: discontinued, rationale: "Profit after tax from discontinued operations (para 68)."}

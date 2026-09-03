@@ -1,0 +1,17 @@
+entity_type: financing
+lines:
+  L001: {category: operating, rationale: "Bank whose main business is lending: interest income on loans to customers is operating (para 65)."}
+  L002: {category: operating, rationale: "Interest on customer deposits and wholesale funding that finances lending: operating for an entity providing financing to customers (para 65)."}
+  L004: {category: operating, rationale: "Fee income from banking services."}
+  L005: {category: operating, rationale: "Fee expense from banking services."}
+  L007: {category: operating, rationale: "Trading income incl. returns on insurance policyholder assets: part of the main business (para 56)."}
+  L008: {category: operating, rationale: "Insurance revenue from contracts issued: main business."}
+  L009: {category: operating, rationale: "Insurance service expense: main business."}
+  L010: {category: operating, rationale: "Reinsurance held result: main business."}
+  L012: {category: operating, rationale: "Other operating income of the group."}
+  L015: {category: operating, rationale: "Insurance finance expense of an insurer is in operating (B? insurance contracts issued as main business)."}
+  L016: {category: operating, ambiguous: true, rationale: "Movement in third-party units of consolidated funds; arises from the investment business, operating for this entity, but could be argued financing."}
+  L017: {category: operating, rationale: "Change in investment contract liabilities linked to policyholder assets: main business."}
+  L020: {category: operating, rationale: "Operating expenses."}
+  L021: {category: operating, rationale: "Credit impairment on loans to customers: main business."}
+  L023: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}

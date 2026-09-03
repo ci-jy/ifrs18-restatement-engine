@@ -1,0 +1,18 @@
+entity_type: financing
+lines:
+  L001: {category: operating, rationale: "Bank: interest income on loans is the main business (para 65)."}
+  L002: {category: operating, rationale: "Interest expense on deposits and debt that fund lending: operating for an entity providing financing to customers (para 65)."}
+  L004: {category: operating, rationale: "Fee and commission income."}
+  L005: {category: operating, rationale: "Fee and commission expense."}
+  L007: {category: operating, rationale: "Net trading income from market-making: main business."}
+  L008: {category: operating, ambiguous: true, rationale: "Net investment income on financial assets held by the bank; operating for a bank investing in financial assets as main business (para 56), though part may be investing."}
+  L009: {category: operating, rationale: "Bargain purchase gain on acquiring a consolidated subsidiary: not an unconsolidated investment, so operating."}
+  L010: {category: operating, rationale: "Other income."}
+  L012: {category: operating, rationale: "Staff costs."}
+  L013: {category: operating, rationale: "Infrastructure costs incl. depreciation."}
+  L014: {category: operating, rationale: "Administration and general expenses."}
+  L015: {category: operating, rationale: "Regulatory levies."}
+  L016: {category: operating, rationale: "Litigation and conduct charges."}
+  L018: {category: investing, rationale: "Share of post-tax results of associates and JVs: investing even for financing entities (para 53(a), 55)."}
+  L020: {category: operating, rationale: "Credit impairment on loans: main business."}
+  L022: {category: income_taxes, rationale: "IAS 12 taxation (para 67)."}

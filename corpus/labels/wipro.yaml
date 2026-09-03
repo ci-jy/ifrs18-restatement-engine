@@ -1,0 +1,11 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "IT services revenue."}
+  L002: {category: operating, rationale: "Cost of revenues."}
+  L004: {category: operating, rationale: "Selling and marketing."}
+  L005: {category: operating, rationale: "General and administrative."}
+  L006: {category: operating, ambiguous: true, rationale: "FX gains/losses on trade receivables and forward contracts hedging revenue (B65: same category as the hedged item)."}
+  L008: {category: financing, rationale: "Interest on borrowings and leases (para 59)."}
+  L009: {category: investing, rationale: "Interest and dividends on treasury investments, gains on sale of investments (para 53(b),(c))."}
+  L010: {category: investing, rationale: "Share of profit of associate and JV (para 53(a), 55)."}
+  L012: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}

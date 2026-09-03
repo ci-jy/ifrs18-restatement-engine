@@ -1,0 +1,11 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Revenue."}
+  L002: {category: operating, rationale: "Cost of goods sold."}
+  L004: {category: operating, rationale: "SG&A."}
+  L005: {category: operating, rationale: "R&D."}
+  L007: {category: investing, rationale: "Interest income on cash (para 53(b))."}
+  L008: {category: financing, rationale: "Interest on borrowings and leases (para 59(a))."}
+  L009: {category: financing, ambiguous: true, rationale: "Other finance costs: pension net interest and unwinding of provisions (para 59(b)); may include FX."}
+  L010: {category: investing, rationale: "Share of results of associates incl. impairment of the investment (para 53(a), 55)."}
+  L012: {category: income_taxes, rationale: "IAS 12 taxation (para 67)."}

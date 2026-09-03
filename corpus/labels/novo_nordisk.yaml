@@ -1,0 +1,11 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Net sales."}
+  L002: {category: operating, rationale: "Cost of goods sold."}
+  L004: {category: operating, rationale: "Sales and distribution costs."}
+  L005: {category: operating, rationale: "R&D costs."}
+  L006: {category: operating, rationale: "Administrative costs."}
+  L007: {category: operating, rationale: "Other operating income and expenses."}
+  L009: {category: operating, ambiguous: true, rationale: "Financial items are dominated by gains on currency hedges of forecast sales; derivatives follow the hedged item (operating, B? derivatives guidance). Interest on cash would be investing."}
+  L010: {category: financing, ambiguous: true, rationale: "Interest on borrowings raised for acquisitions (para 59(a)); also hedge losses that would follow sales to operating."}
+  L012: {category: income_taxes, rationale: "IAS 12 income taxes (para 67)."}

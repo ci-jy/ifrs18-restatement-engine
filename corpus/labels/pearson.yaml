@@ -1,0 +1,10 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Sales."}
+  L002: {category: operating, rationale: "Cost of goods sold."}
+  L004: {category: operating, rationale: "Operating expenses."}
+  L005: {category: operating, rationale: "Gains/losses on disposal of consolidated businesses: subsidiaries are not investing (only unconsolidated ones are, para 53(a)), so operating."}
+  L006: {category: investing, rationale: "Share of results of JVs and associates (para 53(a), 55)."}
+  L008: {category: financing, rationale: "Interest on bonds and leases (para 59)."}
+  L009: {category: investing, ambiguous: true, rationale: "Interest on cash (para 53(b)); also net pension interest income and FX gains."}
+  L011: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}

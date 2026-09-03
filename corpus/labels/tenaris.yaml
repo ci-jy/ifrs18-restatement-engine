@@ -1,0 +1,12 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Net sales."}
+  L002: {category: operating, rationale: "Cost of sales."}
+  L004: {category: operating, rationale: "SG&A."}
+  L005: {category: operating, rationale: "Other operating income."}
+  L006: {category: operating, rationale: "Other operating expenses."}
+  L008: {category: investing, rationale: "Interest on cash and financial investments (para 53(b),(c))."}
+  L009: {category: financing, rationale: "Interest on borrowings and leases (para 59)."}
+  L010: {category: operating, ambiguous: true, rationale: "Other financial results are mostly FX on intercompany and trade balances and FX derivatives hedging them (B65); a portion relates to borrowings."}
+  L012: {category: investing, rationale: "Equity in earnings of non-consolidated companies (para 53(a), 55)."}
+  L014: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}

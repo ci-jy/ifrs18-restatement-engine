@@ -1,0 +1,11 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Regulated network revenue: main business."}
+  L002: {category: operating, rationale: "Expected credit losses on trade receivables from customers: operating."}
+  L003: {category: operating, rationale: "Operating costs including depreciation."}
+  L004: {category: operating, rationale: "Other operating income."}
+  L006: {category: investing, ambiguous: true, rationale: "Interest on financial investments and cash (para 53(b)); notes include net pension interest which would be financing."}
+  L007: {category: financing, rationale: "Interest on bonds and borrowings and unwinding of discounts (para 59)."}
+  L008: {category: investing, rationale: "Share of post-tax results of joint ventures and associates (para 53(a), 55)."}
+  L010: {category: income_taxes, rationale: "IAS 12 tax (para 67)."}
+  L012: {category: discontinued, rationale: "Profit from discontinued operations (para 68)."}

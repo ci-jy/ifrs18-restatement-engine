@@ -1,0 +1,11 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Sales revenue incl. financial services revenue."}
+  L002: {category: operating, rationale: "Cost of sales."}
+  L003: {category: operating, rationale: "SG&A."}
+  L004: {category: operating, rationale: "R&D."}
+  L007: {category: investing, rationale: "Share of profit of equity-method investees (para 53(a), 55)."}
+  L008: {category: investing, rationale: "Interest income on cash and deposits outside the finance segment (para 53(b))."}
+  L009: {category: financing, rationale: "Interest expense on corporate borrowings outside the finance segment (para 59(a))."}
+  L010: {category: operating, ambiguous: true, rationale: "Other, net within finance income/costs: FX gains/losses and derivative results, mostly on operating items (B65); classification depends on the notes."}
+  L013: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}

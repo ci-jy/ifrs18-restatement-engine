@@ -1,0 +1,13 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Product net sales."}
+  L002: {category: operating, rationale: "Collaboration revenue."}
+  L003: {category: operating, rationale: "Other operating income (R&D tax credits, grants)."}
+  L005: {category: operating, rationale: "Cost of sales."}
+  L006: {category: operating, rationale: "R&D."}
+  L007: {category: operating, rationale: "SG&A."}
+  L008: {category: investing, rationale: "Share of loss of joint venture (para 53(a), 55)."}
+  L011: {category: investing, rationale: "Interest on cash, deposits and money market funds (para 53(b),(c))."}
+  L012: {category: financing, rationale: "Interest on leases and bank charges on financing (para 59)."}
+  L013: {category: investing, ambiguous: true, rationale: "Exchange differences arise mainly on EUR-denominated cash and deposits held by a USD entity: same category as the cash (B65), i.e. investing."}
+  L015: {category: income_taxes, rationale: "IAS 12 income tax benefit (para 67)."}

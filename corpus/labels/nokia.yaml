@@ -1,0 +1,13 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Net sales of network equipment and licensing: main business."}
+  L002: {category: operating, rationale: "Cost of sales."}
+  L004: {category: operating, rationale: "R&D expense."}
+  L005: {category: operating, rationale: "SG&A expense."}
+  L006: {category: operating, rationale: "Other operating income (disposal gains, government grants): operating."}
+  L007: {category: operating, rationale: "Other operating expenses (restructuring etc.): operating."}
+  L009: {category: investing, rationale: "Share of results of associates and joint ventures (para 53(a), 55)."}
+  L010: {category: investing, ambiguous: true, rationale: "Interest on cash and fair value gains on investments (para 53(b),(c)); notes also include FX gains."}
+  L011: {category: financing, ambiguous: true, rationale: "Interest on borrowings and leases (para 59); also FX losses and venture fund losses."}
+  L013: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}
+  L015: {category: discontinued, rationale: "Discontinued operations under IFRS 5 (para 68)."}

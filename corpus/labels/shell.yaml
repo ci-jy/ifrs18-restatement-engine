@@ -1,0 +1,13 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Revenue."}
+  L002: {category: investing, rationale: "Share of profit of joint ventures and associates (para 53(a), 55)."}
+  L003: {category: investing, ambiguous: true, rationale: "Interest on cash and dividends from equity securities (para 53(b),(c)); 'other income' part includes disposal gains on PP&E that would be operating."}
+  L005: {category: operating, rationale: "Purchases of crude and products."}
+  L006: {category: operating, rationale: "Production and manufacturing expenses."}
+  L007: {category: operating, rationale: "Selling, distribution and administrative expenses."}
+  L008: {category: operating, rationale: "R&D."}
+  L009: {category: operating, rationale: "Exploration expense is part of the main business."}
+  L010: {category: operating, rationale: "Depreciation, depletion and amortisation of operating assets."}
+  L011: {category: financing, rationale: "Interest on debt and leases and accretion of decommissioning provisions (para 59)."}
+  L014: {category: income_taxes, rationale: "IAS 12 taxation (para 67)."}

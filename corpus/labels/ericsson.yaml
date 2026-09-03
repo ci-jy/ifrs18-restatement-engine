@@ -1,0 +1,14 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Net sales."}
+  L002: {category: operating, rationale: "Cost of sales."}
+  L004: {category: operating, rationale: "R&D."}
+  L005: {category: operating, rationale: "Selling and administrative expenses."}
+  L006: {category: operating, rationale: "Credit losses on trade receivables from customers."}
+  L008: {category: operating, rationale: "Other operating income."}
+  L009: {category: operating, rationale: "Other operating expenses."}
+  L010: {category: investing, rationale: "Share in earnings of associates (para 53(a), 55)."}
+  L012: {category: investing, rationale: "Interest on cash and short-term investments (para 53(b))."}
+  L013: {category: financing, rationale: "Interest on borrowings and leases (para 59)."}
+  L014: {category: operating, ambiguous: true, rationale: "Net FX mainly on operating receivables/payables and their hedges (B65 same category as the item); part relates to cash and debt."}
+  L016: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}

@@ -1,0 +1,11 @@
+entity_type: general
+lines:
+  L001: {category: operating, rationale: "Revenue."}
+  L002: {category: operating, rationale: "Cost of sales."}
+  L004: {category: operating, rationale: "SG&A."}
+  L005: {category: operating, rationale: "R&D."}
+  L006: {category: operating, rationale: "Other operating income/expense."}
+  L008: {category: investing, rationale: "Interest on cash and short-term investments (para 53(b))."}
+  L009: {category: financing, rationale: "Interest on bonds, commercial paper and leases (para 59)."}
+  L011: {category: operating, ambiguous: true, rationale: "Net monetary gain under IAS 29 hyperinflation; not an investing or financing return, so residual operating, but presentation is a judgment."}
+  L013: {category: income_taxes, rationale: "IAS 12 income tax (para 67)."}
