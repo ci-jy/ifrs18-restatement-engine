@@ -1,0 +1,18 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Revenue,ifrs-full:Revenue,item,284312000000,316620000000
+L002,Share of profit of joint ventures and associates,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,2993000000,3725000000
+L003,Interest and other income,ifrs-full:FinanceIncome,item,1724000000,2838000000
+L004,Total revenue and other income,ifrs-full:RevenueAndOperatingIncome,subtotal,289029000000,323183000000
+L005,Purchases,ifrs-full:RawMaterialsAndConsumablesUsed,item,-188120000000,-212883000000
+L006,Production and manufacturing expenses,ifrs-full:OtherExpenseByNature,item,-23379000000,-25240000000
+L007,"Selling, distribution and administrative expenses",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-12439000000,-13433000000
+L008,Research and development,ifrs-full:ResearchAndDevelopmentExpense,item,-1099000000,-1287000000
+L009,Exploration,ifrs-full:ExpenseArisingFromExplorationForAndEvaluationOfMineralResources,item,-2411000000,-1750000000
+L010,"Depreciation, depletion and amortisation",ifrs-full:DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss,item,-26872000000,-31290000000
+L011,Interest expense,ifrs-full:InterestExpense,item,-4787000000,-4673000000
+L012,Total expenditure,ifrs-full:OperatingExpense,subtotal,-259107000000,-290556000000
+L013,Income before taxation,ifrs-full:ProfitLossBeforeTax,subtotal,29922000000,32627000000
+L014,Taxation charge,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-13401000000,-12991000000
+L015,Income for the period,ifrs-full:ProfitLoss,profit,16521000000,19636000000
+L016,Income attributable to non-controlling interest,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,427000000,277000000
+L017,Income attributable to Shell plc shareholders,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,16094000000,19359000000

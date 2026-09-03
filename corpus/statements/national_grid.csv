@@ -1,0 +1,16 @@
+line_id,label,tag,kind,FY2025,FY2024
+L001,Revenue,ifrs-full:Revenue,item,18378000000,19850000000
+L002,Provision for bad and doubtful debts,ifrs-full:ImpairmentLossRecognisedInProfitOrLossTradeReceivables,item,-200000000,-179000000
+L003,Other operating costs,ifrs-full:MiscellaneousOtherOperatingExpense,item,-13244000000,-15208000000
+L004,Other operating income,ifrs-full:MiscellaneousOtherOperatingIncome,item,0,12000000
+L005,Operating profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,4934000000,4475000000
+L006,Finance income,ifrs-full:FinanceIncome,item,450000000,248000000
+L007,Finance costs,ifrs-full:FinanceCosts,item,-1807000000,-1712000000
+L008,Share of post-tax results of joint ventures and associates,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,73000000,37000000
+L009,Profit before tax,ifrs-full:ProfitLossBeforeTax,subtotal,3650000000,3048000000
+L010,Tax,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-821000000,-831000000
+L011,Profit after tax from continuing operations,ifrs-full:ProfitLossFromContinuingOperations,subtotal,2829000000,2217000000
+L012,Profit after tax from discontinued operations,ifrs-full:ProfitLossFromDiscontinuedOperations,item,76000000,74000000
+L013,Total profit for the year (continuing and discontinued),ifrs-full:ProfitLoss,profit,2905000000,2291000000
+L014,Equity shareholders of the parent,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,2902000000,2290000000
+L015,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,3000000,1000000

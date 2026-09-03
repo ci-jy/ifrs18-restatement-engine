@@ -1,0 +1,17 @@
+line_id,label,tag,kind,FY2025,FY2024
+L001,Revenues,ifrs-full:Revenue,item,890884000000,897603000000
+L002,Cost of revenues,ifrs-full:CostOfSales,item,-617802000000,-631497000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,273082000000,266106000000
+L004,Selling and marketing expenses,ifrs-full:SalesAndMarketingExpense,item,-64378000000,-69972000000
+L005,General and administrative expenses,ifrs-full:GeneralAndAdministrativeExpense,item,-57465000000,-60375000000
+L006,"Foreign exchange gains/(losses), net",ifrs-full:NetForeignExchangeGain,item,32000000,340000000
+L007,Results from operating activities,ifrs-full:ProfitLossFromOperatingActivities,subtotal,151271000000,136099000000
+L008,Finance expenses,ifrs-full:FinanceCosts,item,-14770000000,-12552000000
+L009,Finance and other income,ext:FinanceAndOtherIncome,item,38202000000,23896000000
+L010,Share of net profit/ (loss) of associate and joint venture accounted for using the equity method,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,254000000,-233000000
+L011,Profit before tax,ifrs-full:ProfitLossBeforeTax,subtotal,174957000000,147210000000
+L012,Income tax expense,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-42777000000,-36089000000
+L013,Profit for the year,ifrs-full:ProfitLossFromContinuingOperations,subtotal,132180000000,111121000000
+L014,Equity holders of the Company,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,131354000000,110452000000
+L015,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,826000000,669000000
+L016,Profit for the year,ifrs-full:ProfitLoss,profit,132180000000,111121000000

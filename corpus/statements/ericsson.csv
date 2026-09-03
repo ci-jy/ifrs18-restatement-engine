@@ -1,0 +1,20 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Net sales,ifrs-full:RevenueFromContractsWithCustomers,item,247880000000,263351000000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-138515000000,-161749000000
+L003,Gross income,ifrs-full:GrossProfit,subtotal,109365000000,101602000000
+L004,Research and development expenses,ifrs-full:ResearchAndDevelopmentExpense,item,-53514000000,-50664000000
+L005,Selling and administrative expenses,ifrs-full:SellingGeneralAndAdministrativeExpense,item,-51657000000,-39255000000
+L006,Impairment losses on trade receivables,ifrs-full:ImpairmentLossImpairmentGainAndReversalOfImpairmentLossDeterminedInAccordanceWithIFRS9,item,-265000000,-268000000
+L007,Operating expenses,ifrs-full:OperatingExpense,subtotal,-105436000000,-90187000000
+L008,Other operating income,ifrs-full:OtherIncome,item,3229000000,994000000
+L009,Other operating expenses,ifrs-full:OtherExpenseByFunction,item,-2599000000,-32859000000
+L010,Share in earnings of associated companies,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,-246000000,124000000
+L011,Earnings (loss) before financial items and income tax (EBIT),ifrs-full:ProfitLossFromOperatingActivities,subtotal,4313000000,-20326000000
+L012,Financial income,ifrs-full:FinanceIncome,item,2734000000,2145000000
+L013,Financial expenses,ifrs-full:FinanceCosts,item,-4103000000,-4118000000
+L014,Net foreign exchange gains/losses,ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationRecognisedInProfitOrLoss,item,-355000000,-1020000000
+L015,Income (loss) after financial items,ifrs-full:ProfitLossBeforeTax,subtotal,2589000000,-23319000000
+L016,Income tax,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-2215000000,-2785000000
+L017,Net Income (Loss),ifrs-full:ProfitLoss,profit,374000000,-26104000000
+L018,Owners of the Parent Company,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,20000000,-26446000000
+L019,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,354000000,342000000

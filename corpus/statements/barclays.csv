@@ -1,0 +1,27 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Interest and similar income,ifrs-full:InterestRevenueCalculatedUsingEffectiveInterestMethod,item,38326000000,35075000000
+L002,Interest and similar expense,ifrs-full:InterestExpense,item,-25390000000,-22366000000
+L003,Net interest income,ifrs-full:InterestRevenueExpense,subtotal,12936000000,12709000000
+L004,Fee and commission income,ifrs-full:FeeAndCommissionIncome,item,10847000000,10121000000
+L005,Fee and commission expense,ifrs-full:FeeAndCommissionExpense,item,-3600000000,-3592000000
+L006,Net fee and commission income,ifrs-full:FeeAndCommissionIncomeExpense,subtotal,7247000000,6529000000
+L007,Net trading income,ifrs-full:TradingIncomeExpense,item,5768000000,5945000000
+L008,Net investment income/(expense),ext:NetInvestmentIncomeExpense,item,216000000,61000000
+L009,Gain on acquisition,ifrs-full:GainRecognisedInBargainPurchaseTransaction,item,556000000,0
+L010,Other income,ifrs-full:OtherOperatingIncomeExpense,item,65000000,134000000
+L011,Total income,ext:OperatingIncome,subtotal,26788000000,25378000000
+L012,Staff costs,ifrs-full:EmployeeBenefitsExpense,item,-9876000000,-10017000000
+L013,Infrastructure costs,ext:InfrastructureCosts,item,-3549000000,-4095000000
+L014,Administration and general expenses,ifrs-full:SellingGeneralAndAdministrativeExpense,item,-2770000000,-2602000000
+L015,UK regulatory levies,ext:UKRegulatoryLevies,item,-320000000,-180000000
+L016,Litigation and conduct,ifrs-full:LossesOnLitigationSettlements,item,-220000000,-37000000
+L017,Operating expenses,ifrs-full:OperatingExpense,subtotal,-16735000000,-16931000000
+L018,Share of post-tax results of associates and joint ventures,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,37000000,-9000000
+L019,Profit before impairment,ext:ProfitLossFromOperatingActivitiesBeforeImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss,subtotal,10090000000,8438000000
+L020,Credit impairment charges,ifrs-full:ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss,item,-1982000000,-1881000000
+L021,Profit before tax,ifrs-full:ProfitLossBeforeTax,subtotal,8108000000,6557000000
+L022,Taxation,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-1752000000,-1234000000
+L023,Profit after tax,ifrs-full:ProfitLoss,profit,6356000000,5323000000
+L024,Equity holders of the parent,ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntity,attribution,5316000000,4274000000
+L025,Total equity holders of the parent,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,6307000000,5259000000
+L026,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,49000000,64000000

@@ -1,0 +1,19 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,NET SALES,ifrs-full:RevenueFromContractsWithCustomers,item,47403282000,39755575000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-27401527000,-25076675000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,20001755000,14678900000
+L004,Selling,ifrs-full:SellingExpense,item,-2938547000,-2596377000
+L005,General and administrative,ifrs-full:GeneralAndAdministrativeExpense,item,-2619844000,-1923228000
+L006,Income from associates and joint ventures,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,-13845000,-19379000
+L007,"Other operating income, net",ifrs-full:OtherOperatingIncomeExpense,item,1261573000,2076372000
+L008,OPERATING PROFIT BEFORE NET FINANCIAL INCOME (EXPENSES),ifrs-full:ProfitLossFromOperatingActivities,subtotal,15691092000,12216288000
+L009,Financial expenses,ifrs-full:FinanceCosts,item,-5541903000,-4659162000
+L010,Financial income,ifrs-full:FinanceIncome,item,1737434000,1825649000
+L011,Derivative financial instruments,ifrs-full:GainsLossesOnChangeInFairValueOfDerivatives,item,-9112683000,5526714000
+L012,"Monetary and exchange variations, net",ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationRecognisedInProfitOrLoss,item,-15884993000,3087727000
+L013,NET INCOME (LOSS) BEFORE TAXES,ifrs-full:ProfitLossBeforeTax,subtotal,-13111053000,17997216000
+L014,Current,ext:CurrentTaxExpenseIncomeAndCurrentSocialContributionTaxExpenseIncome,item,-1365599000,-395392000
+L015,Deferred,ifrs-full:AdjustmentsForDeferredTaxExpense,item,7431946000,-3495443000
+L016,Net income (loss) for the year,ifrs-full:ProfitLoss,profit,-7044706000,14106381000
+L017,Resulted of the year attributable to controlling shareholders',ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,-7074198000,14084848000
+L018,Non-controlling interest,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,29492000,21533000

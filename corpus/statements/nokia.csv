@@ -1,0 +1,19 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Net sales,ifrs-full:RevenueFromContractsWithCustomers,item,19220000000,21138000000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-10356000000,-12592000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,8864000000,8546000000
+L004,Research and development expenses,ifrs-full:ResearchAndDevelopmentExpense,item,-4512000000,-4277000000
+L005,"Selling, general and administrative expenses",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-2890000000,-2878000000
+L006,Other operating income,ifrs-full:OtherIncome,item,432000000,167000000
+L007,Other operating expenses,ifrs-full:OtherExpenseByFunction,item,105000000,103000000
+L008,Operating profit/(loss),ifrs-full:ProfitLossFromOperatingActivities,subtotal,1999000000,1661000000
+L009,Share of results of associates and joint ventures,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,7000000,-39000000
+L010,Financial income,ifrs-full:FinanceIncome,item,405000000,426000000
+L011,Financial expenses,ifrs-full:FinanceCosts,item,-320000000,-579000000
+L012,Profit before tax,ifrs-full:ProfitLossBeforeTax,subtotal,2091000000,1469000000
+L013,Income tax (expense)/benefit,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-380000000,-820000000
+L014,Profit from continuing operations,ifrs-full:ProfitLossFromContinuingOperations,subtotal,1711000000,649000000
+L015,(Loss)/profit from discontinued operations,ifrs-full:ProfitLossFromDiscontinuedOperations,item,-427000000,30000000
+L016,Profit for the year,ifrs-full:ProfitLoss,profit,1284000000,679000000
+L017,Equity holders of the parent,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,1277000000,665000000
+L018,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,7000000,14000000

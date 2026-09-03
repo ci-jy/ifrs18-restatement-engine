@@ -1,0 +1,16 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Net revenues,ifrs-full:Revenue,item,6676668000,5970146000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-3329483000,-2995877000
+L003,"Selling, general and administrative costs",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-561144000,-462580000
+L004,Research and development costs,ifrs-full:ResearchAndDevelopmentExpense,item,-894092000,-881559000
+L005,"Other expenses, net",ifrs-full:OtherOperatingIncomeExpense,item,-12443000,-18898000
+L006,Result from investments,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,8245000,6137000
+L007,Operating profit (EBIT),ifrs-full:ProfitLossFromOperatingActivities,subtotal,1887751000,1617369000
+L008,Financial income,ifrs-full:FinanceIncome,item,147100000,132319000
+L009,Financial expenses,ifrs-full:FinanceCosts,item,-145895000,-147334000
+L010,"Financial (income)/expenses, net",ifrs-full:FinanceIncomeCost,subtotal,1205000,-15015000
+L011,Profit before taxes,ifrs-full:ProfitLossBeforeTax,subtotal,1888956000,1602354000
+L012,Income tax expense,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-363043000,-344897000
+L013,Net profit,ifrs-full:ProfitLoss,profit,1525913000,1257457000
+L014,Owners of the parent,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,1521877000,1252048000
+L015,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,4036000,5409000

@@ -1,0 +1,28 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Interest income,ifrs-full:RevenueFromInterest,item,31288000000,28051000000
+L002,Interest expense,ifrs-full:InterestExpense,item,-19011000000,-14753000000
+L003,Net interest income,ifrs-full:InterestRevenueExpense,subtotal,12277000000,13298000000
+L004,Fee and commission income,ifrs-full:FeeAndCommissionIncome,item,2943000000,2926000000
+L005,Fee and commission expense,ifrs-full:FeeAndCommissionExpense,item,-1184000000,-1095000000
+L006,Net fee and commission income,ifrs-full:FeeAndCommissionIncomeExpense,subtotal,1759000000,1831000000
+L007,Net trading income (losses),ifrs-full:TradingIncomeExpense,item,17825000000,18049000000
+L008,Insurance revenue,ifrs-full:InsuranceRevenue,item,3291000000,3008000000
+L009,Insurance service expense,ifrs-full:InsuranceServiceExpensesFromInsuranceContractsIssued,item,-2733000000,-2414000000
+L010,Net (expense) income from reinsurance contracts held,ifrs-full:IncomeExpensesFromReinsuranceContractsHeldOtherThanFinanceIncomeExpenses,item,-72000000,2000000
+L011,Insurance service result,ifrs-full:InsuranceServiceResult,subtotal,486000000,596000000
+L012,Other operating income,ext:OperatingIncomeOther,item,1934000000,1631000000
+L013,Other income,ifrs-full:OtherOperatingIncomeExpense,subtotal,22004000000,22107000000
+L014,Total income,ifrs-full:Revenue,subtotal,34281000000,35405000000
+L015,"Net finance (expense) income from insurance, participating investment and reinsurance contracts",ext:NetFinanceExpenseIncomeFromInsuranceAndReinsuranceContractsHeld,item,-10341000000,-11684000000
+L016,Movement in third party interests in consolidated funds,ext:IncreaseDecreaseInThirdPartyInterestsInConsolidatedFunds,item,-1059000000,-1109000000
+L017,Change in non-participating investment contracts,ext:IncreaseDecreaseInNonParticipatingInvestmentContracts,item,-4878000000,-3983000000
+L018,Net finance expense from insurance and participating investment contracts,ifrs-full:InsuranceFinanceIncomeExpensesFromInsuranceContractsIssuedRecognisedInProfitOrLoss,subtotal,-16278000000,-16776000000
+L019,"Total income, after net finance expense in respect of insurance and investment contracts",ext:TotalIncomeNetOfNetFinanceIncomeInRespectOfInsuranceAndInvestmentContracts,subtotal,18003000000,18629000000
+L020,Operating expenses,ifrs-full:OperatingExpense,item,-11601000000,-10823000000
+L021,Impairment,ifrs-full:ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss,item,-431000000,-303000000
+L022,Profit before tax,ifrs-full:ProfitLossBeforeTax,subtotal,5971000000,7503000000
+L023,Tax expense,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-1494000000,-1985000000
+L024,Profit for the year,ifrs-full:ProfitLoss,profit,4477000000,5518000000
+L025,Profit attributable to ordinary shareholders,ifrs-full:ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntity,attribution,3923000000,4933000000
+L026,Profit attributable to equity holders,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,4421000000,5460000000
+L027,Profit attributable to non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,56000000,58000000

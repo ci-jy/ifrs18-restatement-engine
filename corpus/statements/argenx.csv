@@ -1,0 +1,18 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Product net sales,ifrs-full:RevenueFromSaleOfGoods,item,2185883000,1190783000
+L002,Collaboration revenue,ifrs-full:RevenueFromRenderingOfServices,item,4348000,35533000
+L003,Other operating income,ifrs-full:MiscellaneousOtherOperatingIncome,item,61808000,42278000
+L004,Total operating income,ifrs-full:RevenueAndOperatingIncome,subtotal,2252039000,1268594000
+L005,Cost of sales,ifrs-full:CostOfSales,item,-227289000,-117835000
+L006,Research and development expenses,ifrs-full:ResearchAndDevelopmentExpense,item,-983423000,-859492000
+L007,"Selling, general and administrative expenses",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-1055337000,-711905000
+L008,Loss from investment in a joint venture,ifrs-full:ShareOfProfitLossOfJointVenturesAccountedForUsingEquityMethod,item,-7644000,-4411000
+L009,Total operating expenses,ifrs-full:OperatingExpense,subtotal,-2273693000,-1693643000
+L010,Operating loss,ifrs-full:ProfitLossFromOperatingActivities,subtotal,-21654000,-425049000
+L011,Financial income,ifrs-full:FinanceIncome,item,157509000,107386000
+L012,Financial expense,ifrs-full:FinanceCosts,item,-2464000,-906000
+L013,Exchange (losses)/gains,ifrs-full:GainsLossesOnExchangeDifferencesOnTranslationBeforeTax,item,-48211000,14073000
+L014,Profit/(Loss) for the year before taxes,ifrs-full:ProfitLossBeforeTax,subtotal,85180000,-304496000
+L015,Income tax benefit,ifrs-full:IncomeTaxExpenseContinuingOperations,item,747860000,9443000
+L016,Profit/(Loss) for the year,ifrs-full:ProfitLoss,profit,833040000,-295053000
+L017,Owners of the parent,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,833040000,-295053000

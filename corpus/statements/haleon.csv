@@ -1,0 +1,17 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Revenue,ifrs-full:Revenue,item,11233000000,11302000000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-4409000000,-4555000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,6824000000,6747000000
+L004,"Selling, general and administration",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-4452000000,-4413000000
+L005,Research and development,ifrs-full:ResearchAndDevelopmentExpense,item,-298000000,-311000000
+L006,Other operating income/(expense),ifrs-full:OtherOperatingIncomeExpense,item,132000000,-27000000
+L007,Operating profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,2206000000,1996000000
+L008,Finance income,ifrs-full:FinanceIncome,item,82000000,34000000
+L009,Finance expense,ifrs-full:FinanceCosts,item,-384000000,-402000000
+L010,Net finance costs,ifrs-full:FinanceIncomeCost,subtotal,-302000000,-368000000
+L011,Net monetary gain arising from hyperinflationary economies,ifrs-full:GainsLossesOnNetMonetaryPosition,item,6000000,0
+L012,Profit before tax,ifrs-full:ProfitLossBeforeTax,subtotal,1910000000,1628000000
+L013,Income tax,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-435000000,-517000000
+L014,Profit after tax for the period,ifrs-full:ProfitLoss,profit,1475000000,1111000000
+L015,Profit attributable to shareholders of the Group,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,1442000000,1049000000
+L016,Profit attributable to non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,33000000,62000000

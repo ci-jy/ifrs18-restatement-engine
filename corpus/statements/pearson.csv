@@ -1,0 +1,15 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Sales,ifrs-full:Revenue,item,3552000000,3674000000
+L002,Cost of goods sold,ifrs-full:CostOfSales,item,-1741000000,-1839000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,1811000000,1835000000
+L004,Operating expenses,ifrs-full:OperatingExpenseExcludingCostOfSales,item,-1265000000,-1322000000
+L005,Other net gains and losses,ifrs-full:OtherGainsLosses,item,-7000000,-16000000
+L006,Share of results of joint ventures and associates,ifrs-full:ShareOfProfitLossOfContinuingOperationsOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,2000000,1000000
+L007,Operating profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,541000000,498000000
+L008,Finance costs,ifrs-full:FinanceCosts,item,-112000000,-81000000
+L009,Finance income,ifrs-full:FinanceIncome,item,81000000,76000000
+L010,Profit before tax,ifrs-full:ProfitLossBeforeTax,subtotal,510000000,493000000
+L011,Income tax,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-75000000,-113000000
+L012,Profit for the year,ifrs-full:ProfitLoss,profit,435000000,380000000
+L013,Equity holders of the company,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,434000000,378000000
+L014,Non-controlling interest,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,1000000,2000000

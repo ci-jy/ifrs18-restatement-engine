@@ -1,0 +1,20 @@
+line_id,label,tag,kind,FY2025,FY2024
+L001,Revenue,ifrs-full:Revenue,item,37448000000,36717000000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-24929000000,-24459000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,12519000000,12258000000
+L004,Selling and distribution expenses,ext:SellingAndDistributionExpenses,item,-2934000000,-2674000000
+L005,Administrative expenses,ifrs-full:AdministrativeExpense,item,-5447000000,-5768000000
+L006,Net credit losses on financial assets,ifrs-full:ImpairmentLossImpairmentGainAndReversalOfImpairmentLossDeterminedInAccordanceWithIFRS9,item,-476000000,-491000000
+L007,Share of results of equity accounted associates and joint ventures,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,-123000000,-96000000
+L008,Impairment (charge)/reversal,ifrs-full:ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss,item,-4515000000,64000000
+L009,Other income,ifrs-full:OtherOperatingIncomeExpense,item,565000000,372000000
+L010,Operating (loss)/profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,-411000000,3665000000
+L011,Investment income,ifrs-full:InvestmentIncome,item,864000000,581000000
+L012,Financing costs,ifrs-full:FinanceCosts,item,-1931000000,-2626000000
+L013,(Loss)/profit before taxation,ifrs-full:ProfitLossBeforeTax,subtotal,-1478000000,1620000000
+L014,Income tax expense,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-2246000000,-50000000
+L015,(Loss)/profit for the financial year - Continuing operations,ifrs-full:ProfitLossFromContinuingOperations,subtotal,-3724000000,1570000000
+L016,Loss for the financial year - Discontinued operations,ifrs-full:ProfitLossFromDiscontinuedOperations,item,-22000000,-65000000
+L017,(Loss)/profit for the financial year,ifrs-full:ProfitLoss,profit,-3746000000,1505000000
+L018,- Owners of the parent,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,-4169000000,1140000000
+L019,- Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,423000000,365000000

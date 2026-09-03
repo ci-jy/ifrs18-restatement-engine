@@ -1,0 +1,22 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Turnover,ifrs-full:RevenueFromSaleOfGoods,item,31376000000,30328000000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-9048000000,-8565000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,22328000000,21763000000
+L004,"Selling, general and administration",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-11015000000,-9385000000
+L005,Research and development,ifrs-full:ResearchAndDevelopmentExpense,item,-6401000000,-6223000000
+L006,Royalty income,ifrs-full:RevenueFromRoyalties,item,639000000,953000000
+L007,Other operating income/(expense),ifrs-full:OtherOperatingIncomeExpense,item,-1530000000,-363000000
+L008,Operating profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,4021000000,6745000000
+L009,Finance income,ifrs-full:FinanceIncome,item,122000000,115000000
+L010,Finance expense,ifrs-full:FinanceCosts,item,-669000000,-792000000
+L011,Share of after tax profit/(loss) of associates and joint ventures,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,-3000000,-5000000
+L012,Profit/(loss) on disposal of interests in associates and joint ventures,ifrs-full:GainsLossesOnDisposalsOfNoncurrentAssets,item,6000000,1000000
+L013,Profit before taxation from continuing operations,ifrs-full:ProfitLossBeforeTax,subtotal,3477000000,6064000000
+L014,Taxation,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-526000000,-756000000
+L015,Profit after taxation for the year from continuing operations,ifrs-full:ProfitLossFromContinuingOperations,subtotal,2951000000,5308000000
+L016,Profit after taxation from discontinued operations and other gains/(losses) from the demerger,ext:ProfitAfterTaxationFromDiscontinuedOperationsAndOtherGainsLossesFromTheDemerger,item,0,0
+L017,Re-measurement of discontinued operations distributed to shareholders on demerger,ext:RemeasurementOfDiscontinuedOperationsDistributedToShareholdersOnDemerger,item,0,0
+L018,Profit after taxation from discontinued operations,ifrs-full:ProfitLossFromDiscontinuedOperations,item,0,0
+L019,Total profit after taxation for the year,ifrs-full:ProfitLoss,profit,2951000000,5308000000
+L020,Total profit attributable to non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,376000000,380000000
+L021,Total profit attributable to shareholders,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,2575000000,4928000000

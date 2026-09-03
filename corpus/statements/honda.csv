@@ -1,0 +1,17 @@
+line_id,label,tag,kind,FY2025,FY2024
+L001,Sales revenue,ifrs-full:Revenue,item,21688767000000,20428802000000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-17024788000000,-16016659000000
+L003,"Selling, general and administrative",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-2351011000000,-2106539000000
+L004,Research and development,ifrs-full:ResearchAndDevelopmentExpense,item,-1099482000000,-923627000000
+L005,Total operating costs and expenses,ifrs-full:OperatingExpense,subtotal,-20475281000000,-19046825000000
+L006,Operating profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,1213486000000,1381977000000
+L007,Share of profit (loss) of investments accounted for using the equity method,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,982000000,110817000000
+L008,Interest income,ifrs-full:FinanceIncome,item,191131000000,173695000000
+L009,Interest expense,ifrs-full:InterestExpense,item,-54907000000,-59631000000
+L010,"Other, net",ifrs-full:OtherFinanceIncomeCost,item,-33052000000,35526000000
+L011,Total finance income and finance costs,ifrs-full:FinanceIncomeCost,subtotal,103172000000,149590000000
+L012,Profit before income taxes,ifrs-full:ProfitLossBeforeTax,subtotal,1317640000000,1642384000000
+L013,Income tax expense,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-414606000000,-459794000000
+L014,Profit for the year,ifrs-full:ProfitLoss,profit,903034000000,1182590000000
+L015,Owners of the parent,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,835837000000,1107174000000
+L016,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,67197000000,75416000000

@@ -1,0 +1,14 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Net sales,ifrs-full:Revenue,item,290403000000,232261000000
+L002,Cost of goods sold,ifrs-full:CostOfSales,item,-44522000000,-35765000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,245881000000,196496000000
+L004,Sales and distribution costs,ext:SellingExpenseAndDistributionCosts,item,-62101000000,-56743000000
+L005,Research and development costs,ifrs-full:ResearchAndDevelopmentExpense,item,-48062000000,-32443000000
+L006,Administrative costs,ifrs-full:AdministrativeExpense,item,-5276000000,-4855000000
+L007,Other operating income and expenses,ifrs-full:OtherOperatingIncomeExpense,item,-2103000000,119000000
+L008,Operating profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,128339000000,102574000000
+L009,Financial income,ifrs-full:FinanceIncome,item,6198000000,2945000000
+L010,Financial expenses,ifrs-full:FinanceCosts,item,-7346000000,-845000000
+L011,Profit before income taxes,ifrs-full:ProfitLossBeforeTax,subtotal,127191000000,104674000000
+L012,Income taxes,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-26203000000,-20991000000
+L013,Net profit,ifrs-full:ProfitLoss,profit,100988000000,83683000000

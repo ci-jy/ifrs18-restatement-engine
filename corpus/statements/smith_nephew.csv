@@ -1,0 +1,14 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Revenue,ifrs-full:RevenueFromContractsWithCustomers,item,5810000000,5549000000
+L002,Cost of goods sold,ifrs-full:CostOfSales,item,-1764000000,-1730000000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,4046000000,3819000000
+L004,"Selling, general and administrative expenses",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-3100000000,-3055000000
+L005,Research and development expenses,ifrs-full:ResearchAndDevelopmentExpense,item,-289000000,-339000000
+L006,Operating profit,ifrs-full:ProfitLossFromOperatingActivities,subtotal,657000000,425000000
+L007,Interest income,ifrs-full:FinanceIncome,item,24000000,34000000
+L008,Interest expense,ifrs-full:InterestExpense,item,-145000000,-132000000
+L009,Other finance costs,ifrs-full:OtherFinanceCost,item,-28000000,-7000000
+L010,Share of results of associates,ext:ShareOfProfitLossIncludingImpairmentOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,-10000000,-30000000
+L011,Profit before taxation,ifrs-full:ProfitLossBeforeTax,subtotal,498000000,290000000
+L012,Taxation,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-86000000,-27000000
+L013,Attributable profit for the year,ifrs-full:ProfitLoss,profit,412000000,263000000

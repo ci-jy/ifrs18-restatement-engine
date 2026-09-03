@@ -1,0 +1,18 @@
+line_id,label,tag,kind,FY2024,FY2023
+L001,Net sales,ifrs-full:Revenue,item,12523934000,14868860000
+L002,Cost of sales,ifrs-full:CostOfSales,item,-8135489000,-8668915000
+L003,Gross profit,ifrs-full:GrossProfit,subtotal,4388445000,6199945000
+L004,"Selling, general and administrative expenses",ifrs-full:SellingGeneralAndAdministrativeExpense,item,-1904828000,-1919307000
+L005,Other operating income,ifrs-full:OtherIncome,item,60650000,53043000
+L006,Other operating expenses,ifrs-full:OtherExpenseByFunction,item,-125418000,-17273000
+L007,Operating income,ifrs-full:ProfitLossFromOperatingActivities,subtotal,2418849000,4316408000
+L008,Finance income,ifrs-full:FinanceIncome,item,242319000,213474000
+L009,Finance cost,ifrs-full:FinanceCosts,item,-61212000,-106862000
+L010,Other financial results,ifrs-full:OtherFinanceIncomeCost,item,-52051000,114365000
+L011,Income before equity in earnings of non-consolidated companies and income tax,ext:LossIncomeBeforeEquityInEarningsOfNonconsolidatedCompaniesAndIncomeTax,subtotal,2547905000,4537385000
+L012,Equity in earnings of non-consolidated companies,ifrs-full:ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,item,8548000,95404000
+L013,Income before income tax,ifrs-full:ProfitLossBeforeTax,subtotal,2556453000,4632789000
+L014,Income tax,ifrs-full:IncomeTaxExpenseContinuingOperations,item,-479680000,-674956000
+L015,Income for the year,ifrs-full:ProfitLoss,profit,2076773000,3957833000
+L016,Shareholders' equity,ifrs-full:ProfitLossAttributableToOwnersOfParent,attribution,2036445000,3918065000
+L017,Non-controlling interests,ifrs-full:ProfitLossAttributableToNoncontrollingInterests,attribution,40328000,39768000
