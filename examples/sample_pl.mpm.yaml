@@ -1,0 +1,17 @@
+# Adjusted EBITDA as defined by management, reconciled to IFRS 18 operating profit.
+name: Adjusted EBITDA
+description: "Operating profit before depreciation, amortisation, goodwill impairment and restructuring costs."
+subtotal: operating_profit
+adjustments:
+  - label: Depreciation and amortisation (from the PP&E and intangibles notes)
+    amounts: {FY2026: 85400.00, FY2025: 81200.00}
+    tax_rate: 0.25
+    nci_share: 0.08
+  - label: Impairment of goodwill
+    line: L006
+    tax_rate: 0
+    nci_share: 0.08
+  - label: Restructuring costs
+    line: L007
+    tax_rate: 0.25
+    nci_share: 0.08

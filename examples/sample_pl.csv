@@ -1,0 +1,29 @@
+line_id,label,tag,kind,FY2026,FY2025
+L001,Revenue,,item,1250000.00,1180000.00
+L002,Cost of sales,,item,-742500.40,-701230.15
+S_GP,Gross profit,,subtotal,507499.60,478769.85
+L003,Selling and distribution expenses,,item,-98400.00,-92110.00
+L004,Administrative expenses,,item,-121350.75,-115020.30
+L005,Research and development expenses,,item,-35000.00,-31500.00
+L006,Impairment of goodwill,,item,-18000.00,0.00
+L007,Restructuring costs,,item,-12500.00,-4000.00
+L008,Other operating income,,item,6200.00,5480.00
+L009,Share of profit of associate (equity-accounted),,item,14350.25,11020.00
+L010,Foreign exchange gains/(losses) on trade receivables,,item,1120.00,-860.40
+S_OP,Operating profit (as previously reported),,subtotal,243919.10,251779.15
+L011,Interest income on cash and cash equivalents,,item,4820.10,2310.00
+L012,Dividend income from equity investments,,item,1500.00,1200.00
+L013,Fair value gain/(loss) on investment property,,item,3000.00,-1000.00
+L014,Foreign exchange gain/(loss) on USD borrowings,,item,-7215.33,2104.50
+L015,Fair value loss on derivatives,,item,-2450.00,-1310.00
+L016,Interest expense on borrowings,,item,-28400.00,-26950.00
+L017,Interest on lease liabilities,,item,-3150.00,-2980.00
+L018,Net interest on defined benefit pension liability,,item,-1240.00,-1105.00
+L019,Unwinding of discount on decommissioning provisions,,item,-860.00,-815.00
+S_NF,Net finance costs,,subtotal,-33995.23,-28545.50
+S_PBT,Profit before tax,,subtotal,209923.87,223233.65
+L020,Income tax expense,,item,-53860.90,-55210.25
+L021,"Profit from discontinued operations, net of tax",,item,2650.00,-3400.00
+S_PL,Profit for the year,,profit,158712.97,164623.40
+S_NCI,Attributable to non-controlling interests,,attribution,12697.04,13169.87
+S_OWN,Attributable to owners of the parent,,attribution,146015.93,151453.53
