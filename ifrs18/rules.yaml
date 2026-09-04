@@ -1,0 +1,189 @@
+# IFRS 18 classification rules, evaluated top to bottom; the first match wins.
+#
+# match:     tags  - exact local names of XBRL elements (ifrs-full or extension)
+#            tag_regex / label_regex - case-insensitive regular expressions
+#            (a rule matches when any of its criteria match)
+# category:  a category, or a mapping per entity type (general / investing /
+#            financing). "investing" and "financing" mean an entity whose main
+#            business activity is investing in assets or providing financing
+#            to customers (IFRS 18.49-51).
+# flag:      send the line to review; reason and alternatives shown to the
+#            reviewer. May also be given per entity type.
+# Paragraph references are to IFRS 18 Presentation and Disclosure in
+# Financial Statements (issued April 2024).
+
+- id: discontinued-operations
+  description: Profit or loss from discontinued operations (IFRS 5)
+  paragraph: "IFRS 18.68"
+  match:
+    tags: [ProfitLossFromDiscontinuedOperations]
+    label_regex: 'discontinued'
+  category: discontinued
+
+- id: income-taxes
+  description: Income tax expense or income within the scope of IAS 12
+  paragraph: "IFRS 18.67"
+  match:
+    tag_regex: '(IncomeTaxExpense|TaxExpenseIncome|DeferredTaxExpense|CurrentTaxExpense|SocialContribution)'
+    label_regex: '^(income )?tax(es|ation)?\b|\bincome tax(es)?\b|\btaxation\b|\btax (expense|charge|credit|benefit)\b|^(current|deferred)( tax)?$'
+  category: income_taxes
+
+- id: equity-method
+  description: Share of profit or loss of associates and joint ventures accounted for using the equity method
+  paragraph: "IFRS 18.53(a), 55"
+  match:
+    tag_regex: '^ShareOfProfitLoss.*(Associates|JointVentures)|EquityMethod'
+    label_regex: 'share (of|in) .*(associate|joint venture|investee|equity)|equity[- ]accounted|equity in (earnings|results)|equity method'
+  category: investing
+
+- id: disposal-of-associates
+  description: Gains and losses on disposal of associates and joint ventures
+  paragraph: "IFRS 18.53(a), 54"
+  match:
+    label_regex: 'disposal of (interests? in )?(associates?|joint ventures?|investees?)'
+  category: investing
+
+- id: hyperinflation-net-monetary
+  description: Gain or loss on the net monetary position under IAS 29
+  paragraph: "IFRS 18.52"
+  match:
+    tags: [GainsLossesOnNetMonetaryPosition]
+    label_regex: 'net monetary|hyperinflation'
+  category: operating
+  flag:
+    reason: "IAS 29 net monetary gain or loss is not a return on an investment or a cost of finance; operating is the residual category, but the presentation is a judgment to confirm."
+    alternatives: [financing]
+
+- id: fx-on-financing
+  description: Exchange differences on borrowings and other financing liabilities
+  paragraph: "IFRS 18.B65"
+  match:
+    label_regex: '(exchange|fx|currency).*(borrowing|debt|loan|bond|financing)|(borrowing|debt|loan|bond|financing).*(exchange|fx|currency)'
+  category: financing
+
+- id: fx-on-cash
+  description: Exchange differences on cash and cash equivalents and investments
+  paragraph: "IFRS 18.B65"
+  match:
+    label_regex: '(exchange|fx|currency).*(cash|deposit|investment)|(cash|deposit|investment).*(exchange|fx|currency)'
+  category:
+    general: investing
+    investing: operating
+    financing: operating
+
+- id: fx-unspecified
+  description: Exchange differences whose source item is not identified on the face
+  paragraph: "IFRS 18.B65-B68"
+  match:
+    tag_regex: 'ExchangeDifferences|ForeignExchange|ExchangeGain|ExchangeLoss'
+    label_regex: '\bexchange\b|\bfx\b|foreign currency'
+  category: operating
+  flag:
+    reason: "Exchange differences go in the category of the item that gave rise to them (operating receivables, cash = investing, debt = financing). Operating applies only when splitting them would need undue cost or effort; check the FX note."
+    alternatives: [investing, financing]
+
+- id: derivatives-on-financing
+  description: Fair value changes on derivatives used to manage risk on borrowings
+  paragraph: "IFRS 18.B70-B73"
+  match:
+    label_regex: '(derivative|swap|hedg).*(borrowing|debt|loan|bond|financing|interest rate)'
+  category: financing
+
+- id: derivatives-unspecified
+  description: Fair value changes on derivatives whose hedged item is not identified
+  paragraph: "IFRS 18.B70-B76"
+  match:
+    tag_regex: 'Derivative'
+    label_regex: 'derivative|\bhedg'
+  category: operating
+  flag:
+    reason: "Gains and losses on derivatives follow the category of the income and expenses affected by the risk being managed; operating applies only if that would need undue cost or effort. Check which exposures the derivatives hedge."
+    alternatives: [financing, investing]
+
+- id: other-finance-net
+  description: Residual 'other financial results' lines that net FX, derivatives and other items
+  paragraph: "IFRS 18.B65, 52"
+  match:
+    tags: [OtherFinanceIncomeCost]
+    label_regex: 'other financ(e|ial) (results|items|income.*(cost|expense))'
+  category: operating
+  flag:
+    reason: "A netted 'other financial' line usually mixes FX, derivative and other results; split by source item using the finance note."
+    alternatives: [financing, investing]
+
+- id: pension-and-unwinding
+  description: Net interest on defined benefit liabilities and unwinding of discount on provisions
+  paragraph: "IFRS 18.59(b)"
+  match:
+    tags: [OtherFinanceCost]
+    label_regex: 'pension|unwind|discount on provision|other financ(e|ial) (cost|expense)'
+  category: financing
+
+- id: interest-income-banking
+  description: Interest income for an entity whose main business is providing financing
+  paragraph: "IFRS 18.53(b), 56"
+  match:
+    tags: [RevenueFromInterest, InterestRevenueCalculatedUsingEffectiveInterestMethod, InterestRevenueExpense]
+    label_regex: '^interest (and similar )?income$'
+  category:
+    general: investing
+    investing: operating
+    financing: operating
+
+- id: finance-income
+  description: Interest on cash and cash equivalents and returns on financial investments
+  paragraph: "IFRS 18.53(b)-(c)"
+  match:
+    tags: [FinanceIncome, InterestIncome, InvestmentIncome, InterestIncomeOnCashAndBankBalances]
+    tag_regex: 'FinanceAndOtherIncome|InterestIncome'
+    label_regex: '\binterest (and (other|similar) )?income\b|financ(e|ial) income|investment income|finance and other income'
+  category:
+    general: investing
+    investing: operating
+    financing: operating
+  flag:
+    general:
+      when_label_regex: '^financ(e|ial) income$|other income'
+      reason: "Aggregated finance income often also contains FX gains, derivative gains or pension interest income; confirm that it is interest on cash and investments."
+      alternatives: [operating, financing]
+
+- id: dividends-and-fair-value-on-investments
+  description: Dividends and fair value changes on investments and investment property
+  paragraph: "IFRS 18.53(c), 56"
+  match:
+    tag_regex: 'DividendIncome|InvestmentProperty|GainsLossesOnFinancialAssets|FairValue'
+    label_regex: 'dividend|investment property|fair value .*(investment|financial asset)|(gain|loss).* on (sale of )?investments'
+  category:
+    general: investing
+    investing: operating
+    financing: operating
+
+- id: interest-expense
+  description: Interest and other costs of liabilities that only raise finance (borrowings, bonds, leases)
+  paragraph: "IFRS 18.59(a), 61"
+  match:
+    tags: [InterestExpense, FinanceCosts, InterestExpenseOnBorrowings, InterestExpenseOnLeaseLiabilities]
+    label_regex: '\binterest (and similar )?expense\b|financ(e|ial|ing) (costs?|expenses?)|interest on (borrowings|lease|bonds|debt)|borrowing costs?'
+  category:
+    general: financing
+    investing: financing
+    financing: operating
+  flag:
+    financing:
+      reason: "An entity providing financing to customers classifies interest on liabilities that fund that business in operating and makes an accounting policy choice for other financing liabilities (IFRS 18.65); confirm the funding mix."
+      alternatives: [financing]
+
+- id: impairment-of-trade-receivables
+  description: Credit losses on customer receivables
+  paragraph: "IFRS 18.52"
+  match:
+    tag_regex: 'ImpairmentLoss.*(TradeReceivables|IFRS9)'
+    label_regex: 'credit loss|bad and doubtful|impairment .*receivable'
+  category: operating
+
+- id: operating-residual
+  description: Everything not classified in another category
+  paragraph: "IFRS 18.52"
+  match:
+    label_regex: '.*'
+  category: operating
