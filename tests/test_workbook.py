@@ -71,3 +71,20 @@ def test_random_statement_with_mpm_round_trips(tmp_path):
     write_workbook(r, {}, out, mpm=mpm)
     res = verify_workbook(out, 1e-9)
     assert res.ok, res.failures
+
+
+def test_every_corpus_workbook_round_trips(tmp_path):
+    import csv
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[1] / "corpus"
+    worst, cells = 0.0, 0
+    for m in csv.DictReader((root / "manifest.csv").open()):
+        stmt = read_csv(root / "statements" / f"{m['slug']}.csv")
+        classes = classify(stmt, m["entity_type"])
+        r = restate(stmt, {k: c.category for k, c in classes.items()})
+        out = tmp_path / f"{m['slug']}.xlsx"
+        write_workbook(r, classes, out, entity_type=m["entity_type"])
+        res = verify_workbook(out, 1e-9)
+        assert res.ok, (m["slug"], res.failures)
+        worst, cells = max(worst, res.max_abs_diff), cells + res.checked
+    assert cells > 0 and worst <= 1e-9
