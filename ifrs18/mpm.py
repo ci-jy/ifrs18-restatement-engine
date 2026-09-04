@@ -32,7 +32,7 @@ CENT = Decimal("0.01")
 
 
 def cents(x: Decimal) -> Decimal:
-    return x.quantize(CENT, rounding=ROUND_HALF_UP)
+    return x.quantize(CENT, rounding=ROUND_HALF_UP) + 0  # + 0 turns -0.00 into 0.00
 
 
 @dataclass
