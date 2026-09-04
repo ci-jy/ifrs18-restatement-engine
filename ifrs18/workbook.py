@@ -107,7 +107,7 @@ def write_workbook(r: Restatement, classes: dict[str, Classification], path: str
                 wr.append([ln.line_id, "  " + ln.label, *[f"=Mapping!{mc}{map_row[ln.line_id]}" for mc in mcols]])
         row = wr.max_row + 1
         wr.append(["", f"Total {CATEGORY_LABELS[cat].lower()}",
-                   *[f'=SUMIF(Mapping!$C${mfirst}:$C${mlast},"{cat}",Mapping!{mc}${mfirst}:{mc}${mlast})' for mc in mcols]])
+                   *[f'=ROUND(SUMIF(Mapping!$C${mfirst}:$C${mlast},"{cat}",Mapping!{mc}${mfirst}:{mc}${mlast}),2)' for mc in mcols]])
         wr.cell(row, 2).font = BOLD
         cat_total_cell[cat] = row
         for i, p in enumerate(periods):
@@ -116,7 +116,7 @@ def write_workbook(r: Restatement, classes: dict[str, Classification], path: str
         prev = list(sub_row.values())
         row = wr.max_row + 1
         cols = [get_column_letter(3 + i) for i in range(len(periods))]
-        wr.append(["", label, *[(f"={c}{prev[-1]}+{c}{cat_total_cell[cat]}" if prev else f"={c}{cat_total_cell[cat]}") for c in cols]])
+        wr.append(["", label, *[(f"=ROUND({c}{prev[-1]}+{c}{cat_total_cell[cat]},2)" if prev else f"={c}{cat_total_cell[cat]}") for c in cols]])
         for cell in wr[row]:
             cell.font, cell.fill = BOLD, SUB_FILL
         sub_row[key] = row
@@ -126,7 +126,7 @@ def write_workbook(r: Restatement, classes: dict[str, Classification], path: str
     if profit_line is not None:
         row = wr.max_row + 1
         wr.append(["", "Profit or loss as originally reported", *[f"=Original!{pc}{orig_row[profit_line.line_id]}" for pc in pcols]])
-        wr.append(["", "Difference (must be zero)", *[f"={get_column_letter(3 + i)}{sub_row['profit']}-{get_column_letter(3 + i)}{row}" for i in range(len(periods))]])
+        wr.append(["", "Difference (must be zero)", *[f"=ROUND({get_column_letter(3 + i)}{sub_row['profit']}-{get_column_letter(3 + i)}{row},2)" for i in range(len(periods))]])
         for i in range(len(periods)):
             expected[("Restated", f"{get_column_letter(3 + i)}{row + 1}")] = 0
         for ln in stmt.lines:
@@ -136,14 +136,14 @@ def write_workbook(r: Restatement, classes: dict[str, Classification], path: str
     # Checks
     wc = wb.create_sheet("Checks")
     _header(wc, ["Check", *periods])
-    item_sum = [f'SUMIF(Original!$D${first}:$D${last},"item",Original!{pc}${first}:{pc}${last})' for pc in pcols]
+    item_sum = [f'ROUND(SUMIF(Original!$D${first}:$D${last},"item",Original!{pc}${first}:{pc}${last}),2)' for pc in pcols]
     rows = [("Category totals minus sum of original lines",
-             [f"=" + "+".join(f"Restated!{get_column_letter(3 + i)}{cat_total_cell[c]}" for c in CATEGORIES) + f"-{item_sum[i]}" for i in range(len(periods))]),
+             [f"=ROUND(" + "+".join(f"Restated!{get_column_letter(3 + i)}{cat_total_cell[c]}" for c in CATEGORIES) + f"-{item_sum[i]},2)" for i in range(len(periods))]),
             ("Restated profit minus sum of original lines",
-             [f"=Restated!{get_column_letter(3 + i)}{sub_row['profit']}-{item_sum[i]}" for i in range(len(periods))])]
+             [f"=ROUND(Restated!{get_column_letter(3 + i)}{sub_row['profit']}-{item_sum[i]},2)" for i in range(len(periods))])]
     if profit_line is not None:
         rows.append(("Restated profit minus reported profit",
-                     [f"=Restated!{get_column_letter(3 + i)}{sub_row['profit']}-Original!{pcols[i]}{orig_row[profit_line.line_id]}" for i in range(len(periods))]))
+                     [f"=ROUND(Restated!{get_column_letter(3 + i)}{sub_row['profit']}-Original!{pcols[i]}{orig_row[profit_line.line_id]},2)" for i in range(len(periods))]))
     rows.append(("Lines without a valid category", [f'=COUNTA(Mapping!$C${mfirst}:$C${mlast})-' + "-".join(
         f'COUNTIF(Mapping!$C${mfirst}:$C${mlast},"{c}")' for c in CATEGORIES) for _ in periods]))
     for name, formulas in rows:
@@ -208,7 +208,7 @@ def _write_mpm(wb, r, mpm, map_row, sub_row, orig_row, pcols, expected):
         row = [adj.label, _f(adj.tax_rate), _f(adj.nci_share)]
         for i, p in enumerate(periods):
             a, t, n = trip[i]
-            amt = f"=ROUND(-Original!{pcols[i]}{orig_row[adj.line]},2)" if adj.line else _f(adj.amounts.get(p, Decimal(0)))
+            amt = f"=ROUND(-Original!{pcols[i]}{orig_row[adj.line]},2)" if adj.line else f"=ROUND({adj.amounts.get(p, Decimal(0))},2)"
             row += [amt, f"=ROUND(-{a}{rr}*$B{rr},2)", f"=ROUND(-({a}{rr}+{t}{rr})*$C{rr},2)"]
         ws.append(row)
         for i, rec in enumerate(recs):
@@ -222,8 +222,8 @@ def _write_mpm(wb, r, mpm, map_row, sub_row, orig_row, pcols, expected):
     for i in range(len(periods)):
         a, t, n = trip[i]
         rng = lambda col: f"{col}{adj_first}:{col}{adj_last}" if adj_last >= adj_first else "0"
-        row += [f"={a}{start}+SUM({rng(a)})" if adj_last >= adj_first else f"={a}{start}",
-                f"=SUM({rng(t)})" if adj_last >= adj_first else 0, f"=SUM({rng(n)})" if adj_last >= adj_first else 0]
+        row += [f"=ROUND({a}{start}+SUM({rng(a)}),2)" if adj_last >= adj_first else f"={a}{start}",
+                f"=ROUND(SUM({rng(t)}),2)" if adj_last >= adj_first else 0, f"=ROUND(SUM({rng(n)}),2)" if adj_last >= adj_first else 0]
     ws.append(row)
     for cell in ws[tr]:
         cell.font, cell.fill = BOLD, SUB_FILL
