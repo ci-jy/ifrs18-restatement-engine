@@ -60,12 +60,12 @@ def main() -> int:
     ax.bar([i - 0.2 for i in x], naive, 0.4, label="Naive: everything above tax is operating", color="#bbbbbb")
     ax.bar([i + 0.2 for i in x], acc, 0.4, label="IFRS 18 rule engine", color="#2f6db5")
     ax.set_xticks(list(x), [s.replace("_", " ") for s in slugs], rotation=35, ha="right")
-    ax.set_ylim(0, 1.05)
+    ax.set_ylim(0, 1.25)
     ax.set_ylabel("Lines in the right category")
     h = sums["heldout"]
     ax.set_title(f"Held-out real 20-F income statements: {h['accuracy']:.1%} vs {baseline_accuracy(results, 'heldout'):.1%} naive "
                  f"({h['lines']} lines, {h['statements']} filers)")
-    ax.legend(loc="lower right", fontsize=8)
+    ax.legend(loc="upper center", ncol=2, fontsize=8)
     fig.tight_layout()
     fig.savefig(ROOT / "docs" / "accuracy.png", dpi=120)
     print("\n".join(out[:8]))
