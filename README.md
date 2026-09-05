@@ -142,3 +142,5 @@ python3 -m pytest -q
 - Financing entities still get a "profit before financing and income taxes" subtotal. IFRS 18 relaxes that subtotal for some entities with specified main business activities, and the layout should follow that choice.
 - The SEC loader handles filings whose components add up to reported profit. A few filers present revenue and operating profit with no expense lines, or show totals above their components, and these are rejected by the check rather than repaired. Only `IS` statements are read; combined P&L and OCI statements are not.
 - Not covered on purpose: balance sheet and cash-flow restatement (IFRS 18 also changes cash-flow presentation), the disaggregation requirements for operating expenses by nature, and any web UI. Next would be the operating-expenses-by-nature note and a reviewer sign-off log in the workbook.
+
+Project period: 2026-09-03 to 2026-09-05.
